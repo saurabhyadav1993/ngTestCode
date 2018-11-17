@@ -1,0 +1,5 @@
+<div *ngFor="let user of users;let i=index">
+    <button  (click)='id(user)'>{{user?.name}}</button>  
+</div>
+<app-view-child-detail [id]='userId'></app-view-child-detail>
+
